@@ -8,6 +8,10 @@ const higherColumnHeight = 200;
 @CSSModules(styles)
 export default class Histogram extends React.Component {
 
+    static propTypes = {
+        data: React.PropTypes.arrayOf(React.PropTypes.string)
+    }
+
     render() {
         let max = Math.max(...this.props.data);
         return <svg width={1000} height={400}>
