@@ -1,0 +1,19 @@
+@import '../styles/vars';
+
+.column-group {
+  .column {
+    fill: steelblue;
+    stroke: white;
+  }
+
+  .value {
+    visibility: hidden;
+  }
+
+  &:hover {
+    .value {
+      visibility: visible;
+    }
+  }
+
+}

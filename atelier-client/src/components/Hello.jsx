@@ -1,18 +1,20 @@
 import React from 'react';
 
-export default class Hello extends React.Component {
+export default class HelloClass extends React.Component {
 
-    componentDidMount() {
-        console.log('Hello componentDidMount')
+    constructor() {
+        super();
+        this.state = {
+            message: 'Hello component'
+        }
     }
 
-    componentDidUpdate() {
-        console.log('Hello componentDidUpdate')
+    componentDidMount() {
+        // call the back-end
     }
 
     render() {
-        console.log('Hello render')
-        return <div>{this.props.message} <i className="fa fa-thumbs-up"/></div>;
+        return <div>{this.state.message} <i className="fa fa-thumbs-up"/></div>;
     }
 
 }
