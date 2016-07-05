@@ -19,7 +19,9 @@ export default class HistogramView extends React.Component {
     }
 
     fetchData() {
-        // TODO fetch data
+        fetch('/data')
+            .then(response => response.json())
+            .then(data => this.setState({data}))
     }
 
     render() {
