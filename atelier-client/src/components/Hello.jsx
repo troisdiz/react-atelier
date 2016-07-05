@@ -1,21 +1,14 @@
 import React from 'react';
 
-module.exports = React.createClass({
+export default class Hello extends React.Component {
 
-    displayName: 'Hello',
-
-    getInitialState() {
-        return {
-            message: 'Hello component'
-        }
-    },
-
-    componentDidMount() {
-        // call the back-end
-    },
+    constructor() {
+        super();
+        this.state = {message: 'hello again'}
+    }
 
     render() {
         return <div>{this.state.message} <i className="fa fa-thumbs-up"/></div>;
     }
 
-});
+}
