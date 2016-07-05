@@ -5,7 +5,13 @@ module.exports = React.createClass({
     displayName: 'Hello',
 
     getInitialState() {
-        return {}
+        return {
+            message: 'Hello component'
+        }
+    },
+
+    componentDidMount() {
+        // call the back-end
     },
 
     render() {
