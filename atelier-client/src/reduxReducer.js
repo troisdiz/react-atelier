@@ -10,6 +10,12 @@ let startState = Map({
     })
 });
 
+let setData = (state, data) => state.setIn(['data', 'histogram'], fromJS(data));
+
 export default function (state = startState, action) {
+    switch (action.type) {
+        case actions.FetchData:
+            return setData(state, action.data);
+    }
     return state;
 }
