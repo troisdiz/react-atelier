@@ -30,7 +30,7 @@ export default class HomeView extends React.Component {
             <h2>Home</h2>
             <Hello message={this.state.message}/>
             <br />
-            <button onClick={this.changeMessage}>Change message</button>
+            <button onClick={this.changeMessage.bind(this)}>Change message</button>
         </div>;
     }
 }
