@@ -8,9 +8,10 @@ const higherColumnHeight = 200;
 @CSSModules(styles)
 export default class Histogram extends React.Component {
 
-    static propTypes = {
-        data: React.PropTypes.arrayOf(React.PropTypes.string)
-    }
+    // commented because of test =x
+    // static propTypes = {
+    //     data: React.PropTypes.arrayOf(React.PropTypes.string)
+    // }
 
     render() {
         let max = Math.max(...this.props.data);

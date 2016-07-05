@@ -7,7 +7,7 @@ import * as reduxActions from '../reduxActions';
 import {connect} from 'react-redux';
 
 @CSSModules(styles)
-class HistogramView extends React.Component {
+export class HistogramView extends React.Component {
 
     render() {
         return <div className="view-container">
