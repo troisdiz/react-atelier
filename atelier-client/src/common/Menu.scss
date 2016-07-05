@@ -1,0 +1,83 @@
+@import '../styles/vars';
+
+.menu {
+  a {
+    font-size: 16px;
+    position: relative;
+
+    &.active {
+      color: white !important;
+
+      .arrow {
+        right: 0;
+        opacity: 1;
+      }
+    }
+  }
+
+  i {
+    padding-right: 8px;
+  }
+  .title-bloc {
+    .title {
+      display: block;
+      padding: 10px 0 12px 20px;
+      font-size: 24px;
+      color: white;
+      background: $menu-darken;
+      img {
+        padding-right: 20px;
+      }
+      span {
+        position: relative;
+        top: 4px;
+      }
+    }
+    .home-link {
+      margin-top: 4px;
+    }
+    &:hover {
+      .home-link {
+        background: $menu-darken;
+        border-color: white;
+        color: white;
+      }
+
+      .arrow {
+        right: 0;
+        opacity: 1;
+      }
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    opacity: 0;
+    transition: all 100ms ease-in;
+  }
+
+  a:hover {
+    background: darken($menu, 7%);
+
+    .arrow {
+      right: 0;
+      opacity: 1;
+    }
+  }
+
+  .logout {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    text-align: center;
+    width: 100%;
+    color: white;
+
+    input {
+      border: none;
+      background: none;
+    }
+  }
+}

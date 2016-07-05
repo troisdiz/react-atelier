@@ -1,0 +1,52 @@
+@import '../styles/vars';
+
+// thoses styles are imported statically, without react-css-module
+// this file should mainly contain styles given to elements
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+.content-wrapper {
+  background: $background;
+  position: relative;
+}
+
+.react-container {
+  height: 100%;
+}
+
+.main-footer {
+  background: $background;
+  border: 0;
+  font-size: 12px;
+  text-align: right;
+  height: 20px;
+}
+
+.content-wrapper {
+  padding: 0 15px 15px 0;
+}
+
+.view-container {
+  margin: 40px;
+  padding: 40px;
+  background: white;
+}
+
+h2 {
+  padding: 0 0 20px 10px;
+}

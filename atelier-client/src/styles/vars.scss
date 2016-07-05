@@ -1,0 +1,6 @@
+// correspondances avec AdminLTE
+$menu: #2d3c4b;
+// valeur du darken mise en dur à cause du lien avec les .less d'adminlte,
+// qui appellent une fonction darken() qui ne marche pas identiquement
+$menu-darken: #202a35;
+$background: #eceff0;

@@ -1,3 +1,9 @@
-.idea
-/atelier-server/target
+/.idea
+
+/atelier-client/.idea
+/atelier-client/webpack-stats.json
 /atelier-client/node_modules
+
+/atelier-back/.idea
+/atelier-back/atelier.iml
+/atelier-back/target

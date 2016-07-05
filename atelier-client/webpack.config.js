@@ -11,9 +11,9 @@ module.exports = {
         './src/index'
     ],
     output: {
-        path: path.resolve('./assets/bundles/'),
+        path: path.resolve('./bundles/'),
         filename: '[name].js',
-        publicPath: 'http://localhost:3000/assets/bundles/'
+        publicPath: 'http://localhost:3000/bundles/'
     },
 
     plugins: [
@@ -26,13 +26,13 @@ module.exports = {
     ],
 
     module: {
-        preLoaders: [
-            {
-                test: /\.jsx?$/,
-                loader: 'eslint-loader',
-                exclude: /node_modules/
-            }
-        ],
+        // preLoaders: [
+        //     {
+        //         test: /\.jsx?$/,
+        //         loader: 'eslint-loader',
+        //         exclude: /node_modules/
+        //     }
+        // ],
         loaders: [
             {
                 test: /\.jsx?$/,
