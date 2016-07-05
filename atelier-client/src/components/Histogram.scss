@@ -4,6 +4,10 @@
   .column {
     fill: steelblue;
     stroke: white;
+
+    &:hover {
+      fill: mediumseagreen;
+    }
   }
 
   .value {
